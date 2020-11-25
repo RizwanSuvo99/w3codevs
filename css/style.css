@@ -1,0 +1,345 @@
+/*===Fonts===*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+/*====Default CSS====*/
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+	color: #f8f8f8;
+}
+
+/*====Body CSS====*/
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+	width: 95%;
+	margin: auto;
+}
+
+/*===Header CSS Start===*/
+.header {
+	background-color: #31112c;
+	overflow: hidden;
+}
+
+.logo {
+	width: 15%;
+	float: left;
+	padding-left: 50px;
+	cursor: pointer;
+}
+.site_name{
+	width: 35%;
+	float: left;
+}
+.site_name h1{
+	padding-top: 10px;
+	font-family: 'Goldman', cursive;
+	text-shadow: 2px 2px 3px #585B7E,-2px -2px 3px #E8BAED;
+}
+
+.logo img {
+	border-radius: 30px 0px;
+	transition: all .5s ease;
+	border: 1px solid white;
+}
+
+.logo img:hover {
+	border-radius: 0px 30px;
+	transition: all .5s ease;
+}
+
+.searchBar {
+	width: 50%;
+	float: left;
+	padding: 20px 0px 0px 170px;
+}
+
+.searchBar input[type="text"] {
+	background-color: #8db596;
+	padding: 7px 200px 7px 0px;
+	border-radius: 3px;
+	border: 1px solid white;
+	color: black;
+}
+
+.searchBar input[type="button"] {
+	padding: 7px;
+	background-color: #511845;
+	border-radius: 5px;
+	border: 1px solid white;
+	transition: all .5s ease;
+}
+
+.searchBar input[type="button"]:hover {
+	border-radius: 10px;
+	background-color: #321f28;
+}
+
+/*===Header CSS End===*/
+
+/*===Navbar CSS Start===*/
+.wrapper:nth-child(2){
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+.navbar {
+	background-image: linear-gradient(to bottom right, #290001, #87431d, #31112c);
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px 25px;
+	margin-left: 80px;
+}
+
+.active,
+a:hover {
+	background-image:  linear-gradient(to bottom right, black,#393b44,#382933);
+	color: white;
+}
+
+.navbar ul li {
+	display: inline-block;
+}
+
+/*===Navbar CSS End===*/
+
+/*===Hero Section CSS Start===*/
+.heroSection {
+	width: 100%;
+	background-image: url("../images/glenn-carstens-peters.jpg");
+	background-size: 100% 100%;
+	padding: 200px;
+
+}
+
+h1 {
+	text-align: center;
+	font-size: 40px;
+}
+
+.heroSection input[type="button"] {
+	padding: 15px;
+	background-color: #511845;
+	border-radius: 5px;
+	border: none;
+	transition: all .5s ease;
+	display: inline-block;
+	margin: 20px 0px 0px 350px;
+}
+
+.heroSection input[type="button"]:hover {
+	border-radius: 10px;
+	background-color: #321f28;
+}
+
+/*===Hero Section CSS End===*/
+
+/*===Courses Section CSS Start===*/
+.Services {
+	background-color: #321f28;
+	overflow: hidden;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 80% 95%, 75% 100%, 70% 95%, 0 94%);
+
+}
+
+.heading {
+	padding: 20px;
+}
+
+.heading p {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.content {
+	width: 33.33%;
+	float: left;
+	padding: 50px;
+}
+
+.icon img,
+.caption h2,
+.caption p {
+	padding: 10px;
+}
+
+.icon img {
+	background-color: white;
+}
+
+.wrapper:nth-child(4) {
+	background-color: #ffd5cd;
+}
+
+/*===Courses Section CSS End===*/
+
+/*===About CSS Start===*/
+.about {
+	background-color: #ffd5cd;
+
+}
+
+.about h1,
+.about p {
+	color: black;
+	padding: 35px;
+}
+
+.about p {
+	font-size: 25px;
+	font-family: arial;
+	word-spacing: 10px;
+	line-height: 35px;
+	padding: 0px 80px 30px 80px;
+	text-align: justify
+}
+
+/*===About CSS End===*/
+
+/*===Gallery CSS Start===*/
+.gallery {
+	background-color: rgba(15, 106, 94, .6);
+}
+
+.gallery img {
+	width: 33%;
+	display: inline-block;
+
+}
+
+.images {
+	z-index: 1;
+}
+
+.gallery .heading h1 {
+	color: black;
+}
+
+/*===Gallery CSS End===*/
+
+/*===Blogs CSS Start===*/
+.blogs {
+	background-color: #321f28;
+	overflow: hidden;
+}
+
+.blog {
+	width: 33.33%;
+	float: left;
+}
+
+.blog_caption h3,
+.blog_content p,
+.blog_img img {
+	padding: 10px 40px;
+}
+
+/*===Blogs CSS End===*/
+
+/*===Footer CSS Start===*/
+.footer {
+	background-color: black;
+}
+
+.footer .heading h1 {
+	font-family: fantasy;
+	word-spacing: 10px;
+	letter-spacing: 3px;
+	color: #d2e603;
+}
+
+.footer .heading p {
+	font-style: italic;
+}
+.emailBar{
+	width: 50%;
+	margin: 0 auto;
+	padding-left: 70px;
+}
+
+.emailBar input[type="text"] {
+	background-color: #8db596;
+	padding: 15px 250px 15px 0px;
+	border-radius: 3px;
+	border: 1px solid white;
+	color: black;
+}
+
+.emailBar input[type="submit"] {
+	padding: 15px;
+	background-color: #511845;
+	border-radius: 5px;
+	border: 1px solid white;
+	transition: all .5s ease;
+}
+
+.emailBar input[type="submit"]:hover {
+	border-radius: 10px;
+	background-color: #321f28;
+}
+.social{
+	width: 50%;
+	margin: 0 auto;
+	padding-left: 140px;
+}
+.social a{
+	display: inline-block;
+	margin: 20px;
+	padding: 0px;
+}
+.social .fab {
+	background: #7d0633;
+	color: white;
+	padding: 15px;
+}
+
+.social .fab:hover {
+	background: #54123b;
+}
+.others{
+	overflow: hidden;
+	width: 70%;
+	margin: 0 auto;
+}
+.bottom_content{
+	width: 20%;
+	float: left;
+}
+.bottom_content a{
+	margin:0px 0px 0px 40px;
+	padding: 10px 30px;
+}
+.bottom_content a:hover{
+	color: seagreen;
+}
+/*===Footer CSS End===*/
+
+/*===Admin CSS Start===*/
+.admin{
+	background-color: black;
+	overflow: hidden;
+	padding-left: 300px;
+}
+.admin p,.admin img{
+	float: left;
+}
+.admin p{
+	padding: 20px;
+}
+.admin img{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+
